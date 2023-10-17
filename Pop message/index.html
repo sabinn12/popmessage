@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-widht , initial-scale=1.0">
+        <title>Popup Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+       <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="Popup" id="Popup">
+            <img src="download.jpeg" >
+            <h2>Thank you!</h2>
+            <p>Your Details has been succesfully submitted. Thanks!</p>
+ 
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        </div>
+        <script>
+            // selecting a class by its id
+            let Popup = document.getElementById("Popup");
+         // creation of a function
+            function openPopup() {
+                // adding a class in javascript
+                Popup.classList.add("open-Popup");
+            }
+            function closePopup(){
+                Popup.classList.remove("open-Popup");
+            }
+        </script>
+    </body>
+</html>
